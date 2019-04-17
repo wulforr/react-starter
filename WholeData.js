@@ -1,12 +1,11 @@
 import React from "react"
 import Box from "./Box"
-import MainData from "./MainData"
 
 
 class WholeData extends React.Component{
 
     render(){
-        const DataArray = MainData.map(data=>{
+        const DataArray = this.props.Data2.map(data=>{
             return(
                 <Box data1={data} />
             )
@@ -14,7 +13,7 @@ class WholeData extends React.Component{
         return(
             <div className="main container center">
             {
-               DataArray 
+               DataArray
             }
             </div>
         )
