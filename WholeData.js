@@ -7,7 +7,7 @@ class WholeData extends React.Component{
     render(){
         const DataArray = this.props.Data2.map(data=>{
             return(
-                <Box data1={data} />
+                <Box data1={data} y={this.props.f}/>
             )
         }) 
         return(
